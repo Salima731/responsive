@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container div{
+    flex-basis: 24%;
+    background-color: bisque;
+}
+@media  screen and (max-width:992px) {
+    .container{
+        gap: 10px;
+    }
+    .container div{
+        flex-basis: 32%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        gap: 5px;
+    }
+    .container div{
+        flex-basis: 49%;
+    }
+}
